@@ -1,0 +1,86 @@
+/* Estilos generales */
+.home {
+    position: relative;
+    min-height: 90vh; /* Establece la altura mínima del contenedor principal */
+  }
+  
+  .nav-title {
+    color: #131470;
+  }
+  
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Asegura que el image-container cubra toda la altura */
+    background-image: url('/src/assets/backgorund/background.png');
+    background-size: cover;
+    background-position: center center;
+    z-index: -1; /* Coloca el image-container detrás del text-container */
+  }
+  
+  .text-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%; /* Limita el ancho del text-container en pantallas grandes */
+    height: 100%;
+    background: rgba(43, 6, 177, 0.3); /* Fondo semitransparente para legibilidad */
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1; /* Asegura que el text-container esté sobre el image-container */
+  }
+  
+  .form-control {
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #2426ac;
+    border: none;
+    padding: 0.5rem 2rem;
+  }
+  
+  /* Media queries para responsividad */
+  @media (max-width: 768px) {
+    .home {
+      position: static; /* Elimina el posicionamiento relativo para móviles */
+      min-height: auto; /* Altura automática para ajustarse al contenido */
+    }
+  
+    .image-container {
+      position: relative; /* Cambia a posicionamiento relativo */
+      height: 50vh; /* Altura de imagen ajustada para móviles */
+      background-position: 5% center; /* Centra la imagen */
+    }
+  
+    .text-container {
+      position: relative; /* Elimina el posicionamiento absoluto */
+      width: 100%; /* Text-container ocupa el ancho completo */
+      height: auto; /* Altura automática para ajustarse al texto */
+      padding: 2rem; /* Padding reducido para móviles */
+    }
+  }
+  
+  /* Estilos para los íconos sociales y el pie de página */
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    opacity: 0.7;
+  }
+  
+  .nav-footer-back-color {
+    background-color: white;
+  }
+  
