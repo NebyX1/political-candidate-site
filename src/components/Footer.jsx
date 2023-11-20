@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/logo/logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
       <div className="text-center nav-title">
         <a className="text-decoration-none" href="https://identidadsoberana.org/">
           <img 
-            src="/src/assets/logo/logo.png" 
+            src={Logo}
             alt="Identidad Soberana" 
-            style={{ height: '100px' }} // Corregido aquí
+            style={{ height: '100px' }}
           />
         </a>
       </div>

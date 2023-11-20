@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/logo/logo.png";
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
       <div className="container">
         <a className="navbar-brand" href="/">
           <img
-            src="/src/assets/logo/logo.png"
+            src={Logo}
             alt="Identidad Soberana"
             width="50"
             height="50"
